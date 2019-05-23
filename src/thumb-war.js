@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const utils = require('./utils');
 
 function thumbWar(player1, player2) {

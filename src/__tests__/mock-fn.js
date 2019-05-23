@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const thumbWar = require('../thumb-war');
 const utils = require('../utils');
 
