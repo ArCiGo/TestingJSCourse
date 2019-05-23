@@ -9,16 +9,24 @@
         "format": "npm run prettier -- --write",
         "prettier": "prettier \"**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|graphql|mdx)\"",
         "validate": "npm run lint && npm run prettier -- --list-different && npm run flow",
-        "precommit": "lint-staged && npm run flow"
+        "precommit": "lint-staged && npm run flow",
+        "test": "jest",
+        "test:watch": "jest --watch"
     },
     "author": "",
     "license": "ISC",
     "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-core": "^6.26.3",
         "babel-eslint": "^10.0.1",
+        "babel-preset-env": "^1.7.0",
+        "create-jest-runner": "^0.5.0",
         "eslint": "^5.16.0",
         "eslint-config-prettier": "^4.3.0",
         "flow-bin": "^0.98.1",
+        "glob": "^7.1.4",
         "husky": "^2.3.0",
+        "jest": "^24.8.0",
         "lint-staged": "^8.1.7",
         "prettier": "^1.17.1"
     }
